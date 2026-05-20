@@ -1,0 +1,172 @@
+[
+  {
+    "country": "India",
+    "currency": "Indian Rupee",
+    "currency_code": "INR",
+    "capital": "New Delhi",
+    "language": "Hindi, English",
+    "risk_level": "Low",
+    "visa_rules": "E-visa available for many countries. Some require prior approval.",
+    "safety_advice": "Generally safe, avoid isolated areas at night.",
+    "travel_tips": [
+      "Use UPI for payments",
+      "Try local trains for experience",
+      "Respect local customs"
+    ],
+    "location_summary": "A diverse country with rich culture, heritage, and landscapes.",
+    "best_time_to_travel": "October to March",
+    "emergency_contacts": {
+      "police": "100",
+      "ambulance": "102",
+      "embassy_general": "Check your country embassy in India"
+    },
+    "law_simplified": {
+      "Transportation": "Public transport widely available; follow traffic rules strictly.",
+      "Safety and security": "Generally safe but stay alert in crowded places.",
+      "Entry and exit requirements": "Valid visa or e-visa required for entry.",
+      "Health": "Drink bottled water and avoid street food if sensitive.",
+      "Laws and culture": "Respect religious sites and dress modestly.",
+      "Natural disasters and climate": "Monsoons may cause flooding in some regions."
+    },
+    "tourist_services": {
+      "cabs": ["Ola", "Uber", "Rapido"],
+      "hotels": ["Taj Hotels", "ITC Hotels", "Oberoi Hotels"]
+    }
+  },
+  {
+    "country": "USA",
+    "currency": "US Dollar",
+    "currency_code": "USD",
+    "capital": "Washington, D.C.",
+    "language": "English",
+    "risk_level": "Medium",
+    "visa_rules": "ESTA or visa required depending on nationality.",
+    "safety_advice": "Be cautious in crowded urban areas.",
+    "travel_tips": [
+      "Use public transport in big cities",
+      "Carry ID always",
+      "Tipping is expected"
+    ],
+    "location_summary": "A highly developed country with diverse states and cultures.",
+    "best_time_to_travel": "April to June, September to October",
+    "emergency_contacts": {
+      "police": "911",
+      "ambulance": "911",
+      "embassy_general": "Check your country embassy in USA"
+    },
+    "law_simplified": {
+      "Transportation": "Driving rules strict; seat belts mandatory.",
+      "Safety and security": "Stay cautious in high-crime neighborhoods.",
+      "Entry and exit requirements": "ESTA or visa required before travel.",
+      "Health": "Healthcare is expensive; travel insurance recommended.",
+      "Laws and culture": "Tipping culture is expected in services.",
+      "Natural disasters and climate": "Hurricanes, wildfires, and storms in some regions."
+    },
+    "tourist_services": {
+      "cabs": ["Uber", "Lyft", "Yellow Cab"],
+      "hotels": ["Hilton", "Marriott", "Hyatt"]
+    }
+  },
+  {
+    "country": "UK",
+    "currency": "British Pound",
+    "currency_code": "GBP",
+    "capital": "London",
+    "language": "English",
+    "risk_level": "Low",
+    "visa_rules": "Standard visitor visa required for many countries.",
+    "safety_advice": "Safe overall, watch for pickpocketing in tourist areas.",
+    "travel_tips": [
+      "Use Oyster card in London",
+      "Weather changes quickly",
+      "Book attractions early"
+    ],
+    "location_summary": "A historic country known for culture, education, and landmarks.",
+    "best_time_to_travel": "May to September",
+    "emergency_contacts": {
+      "police": "999",
+      "ambulance": "999",
+      "embassy_general": "Check your country embassy in UK"
+    },
+    "law_simplified": {
+      "Transportation": "Drive on the left side; public transport efficient.",
+      "Safety and security": "Very safe; be aware of pickpockets.",
+      "Entry and exit requirements": "Visa required for many non-EU travelers.",
+      "Health": "Healthcare available via NHS but travel insurance advised.",
+      "Laws and culture": "Queueing etiquette is important.",
+      "Natural disasters and climate": "Frequent rain and mild weather."
+    },
+    "tourist_services": {
+      "cabs": ["Uber", "Black Cab", "Bolt"],
+      "hotels": ["The Savoy", "Hilton London", "Premier Inn"]
+    }
+  },
+  {
+    "country": "Australia",
+    "currency": "Australian Dollar",
+    "currency_code": "AUD",
+    "capital": "Canberra",
+    "language": "English",
+    "risk_level": "Low",
+    "visa_rules": "ETA or eVisitor visa required for most travelers.",
+    "safety_advice": "Watch wildlife and sun exposure.",
+    "travel_tips": [
+      "Use sunscreen always",
+      "Respect wildlife rules",
+      "Public transport is reliable"
+    ],
+    "location_summary": "A vast country known for beaches, wildlife, and outdoor lifestyle.",
+    "best_time_to_travel": "September to November, March to May",
+    "emergency_contacts": {
+      "police": "000",
+      "ambulance": "000",
+      "embassy_general": "Check your country embassy in Australia"
+    },
+    "law_simplified": {
+      "Transportation": "Strict traffic laws; heavy fines for violations.",
+      "Safety and security": "Very safe but be cautious in remote areas.",
+      "Entry and exit requirements": "Visa required before arrival.",
+      "Health": "Strong sun exposure; use sunscreen.",
+      "Laws and culture": "Respect wildlife and environmental rules.",
+      "Natural disasters and climate": "Bushfires and heatwaves common."
+    },
+    "tourist_services": {
+      "cabs": ["Uber", "Ola", "13cabs"],
+      "hotels": ["Rydges", "Hilton Sydney", "Shangri-La Sydney"]
+    }
+  },
+  {
+    "country": "Canada",
+    "currency": "Canadian Dollar",
+    "currency_code": "CAD",
+    "capital": "Ottawa",
+    "language": "English, French",
+    "risk_level": "Low",
+    "visa_rules": "eTA or visa required depending on nationality.",
+    "safety_advice": "Very safe, but prepare for cold weather.",
+    "travel_tips": [
+      "Carry warm clothing",
+      "Use public transport in cities",
+      "Explore national parks"
+    ],
+    "location_summary": "A peaceful country known for nature, lakes, and multicultural cities.",
+    "best_time_to_travel": "June to August",
+    "emergency_contacts": {
+      "police": "911",
+      "ambulance": "911",
+      "embassy_general": "Check your country embassy in Canada"
+    },
+    "law_simplified": {
+      "Transportation": "Public transport reliable; follow road rules.",
+      "Safety and security": "One of the safest countries globally.",
+      "Entry and exit requirements": "eTA or visa required.",
+      "Health": "Cold climate; dress appropriately.",
+      "Laws and culture": "Respect multicultural norms.",
+      "Natural disasters and climate": "Extreme winters and snowfall."
+    },
+    "tourist_services": {
+      "cabs": ["Uber", "Lyft", "Co-op Taxi"],
+      "hotels": ["Fairmont", "Four Seasons", "Marriott"]
+    }
+  }
+]

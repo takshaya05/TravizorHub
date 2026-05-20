@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+@layer base {
+  :root {
+    --primary: #5d7d96;
+    --secondary: #926a42;
+    --bg: #010b13;
+    --text: #f5f7fa;
+    --accent: #a4d5f1;
+    --heading: #dfcfc9;
+    --subheading: #eecdcd;
+    --muted: #b3d1e2;
+    --highlight: #bba8a1;
+    --border: rgba(93,125,150,0.3);
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Lato', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--heading);
+    font-family: 'Lato', sans-serif;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
