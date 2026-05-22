@@ -43,7 +43,7 @@ function Home() {
             </p>
 
             <p className="text-sm md:text-base text-[#b3d1e2] max-w-md">
-              Simplifying international travel legal rules using AI-powered analysis, comparison tools, and real-time assistance.
+              An AI-powered platform that visualizes country data, risk maps, services, and travel comparisons on interactive maps, while simplifying international travel rules with real-time analysis and intelligent assistance.
             </p>
 
             <Link
@@ -94,5 +94,4 @@ function Home() {
     </div>
   );
 }
-
 export default Home;

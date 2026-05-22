@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <header className="sticky top-0 z-50 backdrop-blur-3xl bg-linear-to-br from-[#010b13] to-[#2c3539] shadow-lg">
-
+      
       <div className="absolute bottom-0 left-0 w-full h-0.5 bg-linear-to-r from-[#536878] via-[#4b3621] to-[#696969] opacity-70 animate-pulse" />
 
       <div className="max-w-7xl mx-auto flex justify-between items-center px-8 py-4 border-b border-[#536878]/30">
@@ -24,35 +24,35 @@ function Header() {
 
           <Link
             to="/"
-            className="text-[#f5f5fa] hover:text-[#bbe7fa] transition-colors duration-300"
+            className="relative text-[#f5f5fa] hover:text-[#bbe7fa] transition-all duration-300 after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-[#bbe7fa] after:transition-all after:duration-300 hover:after:w-full"
           >
             Home
           </Link>
 
           <Link
             to="/get-started"
-            className="text-[#f5f5fa] hover:text-[#bbe7fa] transition-colors duration-300"
+            className="relative text-[#f5f5fa] hover:text-[#bbe7fa] transition-all duration-300 after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-[#bbe7fa] after:transition-all after:duration-300 hover:after:w-full"
           >
             Get Started
           </Link>
 
           <Link
             to="/services"
-            className="text-[#f5f7fa] hover:text-[#bbe7fa] transition-colors duration-300"
+            className="relative text-[#f5f7fa] hover:text-[#bbe7fa] transition-all duration-300 after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-[#bbe7fa] after:transition-all after:duration-300 hover:after:w-full"
           >
             Services
           </Link>
 
           <Link
             to="/about"
-            className="text-[#f5f7fa] hover:text-[#bbe7fa] transition-colors duration-300"
+            className="relative text-[#f5f7fa] hover:text-[#bbe7fa] transition-all duration-300 after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-[#bbe7fa] after:transition-all after:duration-300 hover:after:w-full"
           >
             About Us
           </Link>
 
           <Link
             to="/contact"
-            className="text-[#f5f7fa] hover:text-[#bbe7fa] transition-colors duration-300"
+            className="relative text-[#f5f7fa] hover:text-[#bbe7fa] transition-all duration-300 after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 after:bg-[#bbe7fa] after:transition-all after:duration-300 hover:after:w-full"
           >
             Contact Us
           </Link>
