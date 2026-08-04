@@ -5,8 +5,9 @@ Travellers often face difficulty understanding foreign country laws, travel regu
 
 ## Tech Stack
 - **Frontend:** React.js, Vite, Tailwind CSS, HTML, CSS, JavaScript  
-- **Backend:** Node.js / Express.js  
-- **AI/NLP Models:** Ollama / Open-source LLMs   
+- **Backend:** Node.js, Express.js  
+- **Database:** MongoDB 
+- **AI Models:** Ollama / Open-source LLMs   
 - **Deployment:** Vercel
 
 ## Features
@@ -31,9 +32,9 @@ Travellers often face difficulty understanding foreign country laws, travel regu
 - Context-aware conversation support  
 - Interactive chat window inside dashboard  
 
-## Dark Theme Design Palette
-- Dim Gray  
-- Van Dyke  
-- Rich Black  
-- Gunmetal  
-- Payne’s Gray   
+ ## Dark Theme Design Palette
+- Primary: Dim Gray  
+- Secondary: Van Dyke  
+- Neutral: Payne’s Gray  
+- Accent: Gunmetal  
+- Background: Rich Black

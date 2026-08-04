@@ -3,10 +3,13 @@ import {
   Mail,
   Phone,
   Globe,
-  Facebook,
-  Instagram,
-  Twitter,
 } from "lucide-react";
+
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaXTwitter,
+} from "react-icons/fa6";
 
 const faqs = [
   {
@@ -183,7 +186,7 @@ const ContactUs = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <Facebook
+                      <FaFacebookF
                         size={16}
                         className="cursor-pointer hover:text-[#a4d5f1] transition"
                       />
@@ -194,7 +197,7 @@ const ContactUs = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <Instagram
+                      <FaInstagram
                         size={16}
                         className="cursor-pointer hover:text-[#a4d5f1] transition"
                       />
@@ -205,7 +208,7 @@ const ContactUs = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <Twitter
+                      <FaXTwitter
                         size={16}
                         className="cursor-pointer hover:text-[#a4d5f1] transition"
                       />
@@ -248,7 +251,7 @@ const ContactUs = () => {
                         {item.q}
                       </div>
 
-                      <div className="absolute inset-0 flex items-center justify-center rounded-lg border border-[#5d7d96]/30 bg-[#926a42]/70 transform-[rotateY(180deg)] backface-hidden p-3 text-center text-xs text-[#ffffff]">
+                      <div className="absolute inset-0 flex items-center justify-center rounded-lg border border-[#5d7d96]/30 bg-[#926a42]/70 transform-[rotateY(180deg)] backface-hidden p-3 text-center text-xs text-white">
                         {item.a}
                       </div>
 

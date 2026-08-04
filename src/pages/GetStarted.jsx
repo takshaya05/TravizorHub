@@ -1,9 +1,21 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import PropTypes from "prop-types";
 
-const InputField = ({ label, instruction, name, type, value, onChange }) => (
+
+const InputField = ({
+  label,
+  instruction,
+  name,
+  type,
+  value,
+  onChange,
+}) => (
   <div className="flex flex-col gap-1">
-    <label className="text-sm font-medium text-[#a4d5f1]">{label}</label>
+
+    <label className="text-sm font-medium text-[#a4d5f1]">
+      {label}
+    </label>
 
     <span className="text-xs text-[#a4d5f1] leading-tight">
       {instruction}
@@ -17,11 +29,25 @@ const InputField = ({ label, instruction, name, type, value, onChange }) => (
       onChange={onChange}
       required
     />
+
   </div>
 );
 
+
+InputField.propTypes = {
+  label: PropTypes.string.isRequired,
+  instruction: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
+};
+
+
 function GetStarted() {
+
   const navigate = useNavigate();
+
 
   const [signupData, setSignupData] = useState({
     name: "",
@@ -29,14 +55,17 @@ function GetStarted() {
     password: "",
   });
 
+
   const [loginData, setLoginData] = useState({
     email: "",
     password: "",
   });
 
+
   const nameRegex = /^[A-Za-z\s]+$/;
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const passwordRegex = /^[0-9]{6}$/;
+
 
   const handleSignupChange = (e) =>
     setSignupData({
@@ -44,13 +73,16 @@ function GetStarted() {
       [e.target.name]: e.target.value,
     });
 
+
   const handleLoginChange = (e) =>
     setLoginData({
       ...loginData,
       [e.target.name]: e.target.value,
     });
 
+
   const handleSignupSubmit = (e) => {
+
     e.preventDefault();
 
     if (!nameRegex.test(signupData.name)) {
@@ -68,6 +100,7 @@ function GetStarted() {
       return;
     }
 
+
     localStorage.setItem(
       "user",
       JSON.stringify({
@@ -77,61 +110,85 @@ function GetStarted() {
       })
     );
 
-    alert("Account created successfully. Login now.");
+
+    alert("Account created successfully. Login now");
+
 
     setSignupData({
       name: "",
       email: "",
       password: "",
     });
+
   };
 
+
   const handleLoginSubmit = (e) => {
+
     e.preventDefault();
 
-    const storedUser = JSON.parse(localStorage.getItem("user"));
+
+    const storedUser = JSON.parse(
+      localStorage.getItem("user")
+    );
+
 
     if (!storedUser) {
       alert("No account found. Please sign up first.");
       return;
     }
 
+
     if (loginData.email !== storedUser.email) {
       alert("Invalid email");
       return;
     }
+
 
     if (loginData.password !== storedUser.password) {
       alert("Incorrect password");
       return;
     }
 
+
     alert("Logged in successfully");
 
+
     navigate("/dashboard", {
-      state: { user: storedUser },
+      state: {
+        user: storedUser,
+      },
     });
+
   };
+
 
   const handleForgotPassword = () => {
     alert("Password reset link sent to your email");
   };
 
+
   return (
+
     <div className="relative min-h-screen overflow-hidden flex items-center justify-center px-6 py-10">
 
       <div
         className="absolute inset-0 bg-cover bg-center blur-[1px] scale-105"
-        style={{ backgroundImage: "url('/bgd.png')" }}
+        style={{
+          backgroundImage: "url('/bgd.png')",
+        }}
       ></div>
 
+
       <div className="absolute inset-0 bg-black/85"></div>
+
 
       <div className="relative z-10 w-full max-w-6xl flex flex-col gap-4">
 
         <h1 className="text-4xl font-bold text-center text-[#dfcfc9]">
           Get Started
         </h1>
+
 
         <div className="grid md:grid-cols-2 gap-6">
 
@@ -140,6 +197,7 @@ function GetStarted() {
             <h2 className="text-xl font-semibold text-center text-[#eecdcd]">
               Sign Up
             </h2>
+
 
             <form
               className="flex flex-col gap-3"
@@ -173,7 +231,10 @@ function GetStarted() {
                 onChange={handleSignupChange}
               />
 
-              <button className="w-full bg-linear-to-r from-[#5d7d96] to-[#926a42] text-[#000000] py-2.5 rounded-xl hover:from-[#926a42] hover:to-[#5d7d96] transition text-sm mt-1">
+
+              <button
+                className="w-full bg-linear-to-r from-[#5d7d96] to-[#926a42] text-[#000000] py-2.5 rounded-xl hover:from-[#926a42] hover:to-[#5d7d96] transition text-sm mt-1"
+              >
                 Create Account
               </button>
 
@@ -181,11 +242,13 @@ function GetStarted() {
 
           </div>
 
+
           <div className="border border-[#5d7d96]/30 rounded-2xl p-4 backdrop-blur-xl flex flex-col gap-3 bg-[#0d1114]/40">
 
             <h2 className="text-xl font-semibold text-center text-[#eecdcd]">
               Login
             </h2>
+
 
             <form
               className="flex flex-col gap-3"
@@ -210,11 +273,15 @@ function GetStarted() {
                 onChange={handleLoginChange}
               />
 
+
               <div className="flex flex-col gap-2 mt-2">
 
-                <button className="w-full bg-linear-to-r from-[#5d7d96] to-[#926a42] text-[#000000] py-2.5 rounded-xl hover:from-[#926a42] hover:to-[#5d7d96] transition text-sm">
+                <button
+                  className="w-full bg-linear-to-r from-[#5d7d96] to-[#926a42] text-[#000000] py-2.5 rounded-xl hover:from-[#926a42] hover:to-[#5d7d96] transition text-sm"
+                >
                   Login
                 </button>
+
 
                 <button
                   type="button"
@@ -235,7 +302,10 @@ function GetStarted() {
       </div>
 
     </div>
+
   );
+
 }
+
 
 export default GetStarted;
